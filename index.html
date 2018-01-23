@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>Baza danych koktajli</title>
+	<link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="rest.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style type="text/css">
+    body {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+     background-attachment: fixed;
+       background-image: url("image/background.jpg");
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <!--Przyciski funkcyjne pozwalające na przemieszczanie się w aplikacji-->
+        <li onclick="_listaKoktajli();">Koktajle</a></li>
+        <li onclick="_listaSkladnikow();">Składniki</a></li>
+        <li onclick="_listaProduktow();">Produkty do koktajlu</a></li>
+        <li onclick="_listaObszarow();">Znajdź swój koktajl</a></li>
+        <li onclick="_listaDiet();">Dietetycznie</a></li>
+        <li onclick="_listaZdrowia();">Zdrowie</a></li>
+        <li onclick="_listaOcen();">Restauracje</a></li>
+        <li onclick="_userPanel();" id="userPanel">Panel Sterowania</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div align="center" style="background-color: white; padding-top: 50px; padding-bottom: 20px; color: black;">
+ <h1> Witamy w bazie danych koktajli!</h1>
+</div>
+
+ <div id="content" >
+    <div id="contentNoFooter" style="background-color: white; opacity: 0.8;">
+      <div style="height: 60px;"></div>
+      <div id="data"></div>
+      <div id="result"></div>
+    </div>
+    <footer>
+      Posted by: Olga Dobrzanska
+    </footer>
+  </div>
+</div>
+</body>
+
+</html>
